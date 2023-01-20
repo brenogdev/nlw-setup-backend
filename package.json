@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "create:migration": "npx prisma migrate dev",
-    "db": "npx prisma studio"
+    "migrate": "npx prisma migrate dev",
+    "db": "npx prisma studio",
+    "generate": "npx prisma generate"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,9 @@
     "fastify": "^4.11.0"
   },
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^9.3.0",
     "prisma": "^4.9.0",
+    "prisma-erd-generator": "^1.2.5",
     "tsx": "^3.12.2",
     "typescript": "^4.9.4"
   }
